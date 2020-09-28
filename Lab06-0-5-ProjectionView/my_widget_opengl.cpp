@@ -33,6 +33,7 @@ void MiWidgetOpenGL::paintGL()
 {
     vao.bind();
     vbo.bind();
+
 }
 
 
