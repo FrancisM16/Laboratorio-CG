@@ -33,6 +33,10 @@ void MiWidgetOpenGL::paintGL()
 {
     vao.bind();
     vbo.bind();
+    glClearColor(r, g, b, 0.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glPointSize(10.0f);
+    glDrawArrays(GL_POINTS,0,1);
 
 }
 

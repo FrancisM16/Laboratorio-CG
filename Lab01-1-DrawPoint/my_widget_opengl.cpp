@@ -14,7 +14,7 @@ MiWidgetOpenGL::~MiWidgetOpenGL()
 void MiWidgetOpenGL::initializeGL()
 {
     float vertices[] = {
-             0.0f,  0.0f, 0.0f
+             0.6f,  0.3f, 0.0f
     };
     vao.create();
     vao.bind();
