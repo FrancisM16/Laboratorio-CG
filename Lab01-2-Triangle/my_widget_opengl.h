@@ -4,8 +4,8 @@
 #include <QOpenGLVertexArrayObject>
 #include <QOpenGLBuffer>
 #include <QOpenGLShaderProgram>
-
-class MiWidgetOpenGL: public QOpenGLWidget{
+#include <QOpenGLFunctions_3_3_Compatibility>
+class MiWidgetOpenGL: public QOpenGLWidget, public QOpenGLFunctions_3_3_Compatibility{
 
 public:
     MiWidgetOpenGL();

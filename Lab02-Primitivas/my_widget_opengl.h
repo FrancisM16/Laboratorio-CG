@@ -4,13 +4,18 @@
 #include <QOpenGLVertexArrayObject>
 #include <QOpenGLBuffer>
 #include <QOpenGLShaderProgram>
-
-class MiWidgetOpenGL: public QOpenGLWidget{
+#include <QOpenGLFunctions_3_3_Compatibility>
+#include <math.h>
+#include <stdlib.h>
+class MiWidgetOpenGL: public QOpenGLWidget, public QOpenGLFunctions_3_3_Compatibility{
 
 public:
     MiWidgetOpenGL();
     ~MiWidgetOpenGL();
     float r,g,b;
+    int dimVertices;
+    int numberOfVertices;
+    int primitiva;
 protected:
     void initializeGL();
     void resizeGL(int w, int h);
