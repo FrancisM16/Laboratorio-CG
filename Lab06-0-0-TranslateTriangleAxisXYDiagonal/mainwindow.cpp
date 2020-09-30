@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    wogl = new MiWidgetOpenGL();
+    ui->verticalLayout->addWidget(wogl);
 }
 
 MainWindow::~MainWindow()
