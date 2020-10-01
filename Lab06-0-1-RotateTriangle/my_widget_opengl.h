@@ -11,6 +11,7 @@ public:
     MiWidgetOpenGL();
     ~MiWidgetOpenGL();
     float r,g,b;
+    QMatrix4x4 base;
 protected:
     void initializeGL();
     void resizeGL(int w, int h);
@@ -18,6 +19,6 @@ protected:
 private:
     QOpenGLVertexArrayObject vao;
     QOpenGLBuffer vbo{QOpenGLBuffer::VertexBuffer};
-    QOpenGLShaderProgram *sp;
+    QOpenGLShaderProgram *m_program;
 };
 #endif // MY_WIDGET_OPENGL_H
